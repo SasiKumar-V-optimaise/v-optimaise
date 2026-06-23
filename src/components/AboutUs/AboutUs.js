@@ -19,7 +19,7 @@ const capabilities = [
 ];
 
 const industries = [
-  "Steel plants",
+  "Steel Melting Shops",
   "Blast furnace operations",
   "Coke oven plants",
   "Rolling mills",
@@ -29,7 +29,7 @@ const industries = [
 
 const reasons = [
   "Industrial problem understanding",
-  "AI + sensor + process knowledge",
+  "Data-to-Decision Intelligence",
   "Harsh environment measurement experience",
   "Practical plant-ready deployment",
   "Dashboards, alerts, and operator workflows",
