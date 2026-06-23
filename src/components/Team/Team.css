@@ -1,0 +1,164 @@
+/* Updated flip animation: no horizontal movement on hover */
+.core-team-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.core-team-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fdae0f;
+  padding-top: 40px;
+}
+
+.core-team-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: hidden; /* no vertical scroll */
+  -ms-overflow-style: none; /* IE/Edge hide scrollbar */
+  scrollbar-width: none; /* Firefox hide scrollbar */
+}
+.core-team-row::-webkit-scrollbar {
+  display: none; /* Chrome/Safari hide scrollbar */
+}
+
+.core-team-row.core-team-first-row {
+  justify-content: center;
+  grid-template-columns: repeat(2, 300px);
+  max-width: 630px;
+  margin-top: -40px;
+}
+
+.core-team-row.core-team-multiple {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1290px;
+}
+
+.core-team-card {
+  cursor: pointer;
+  min-height: 300px;
+  max-width: 300px;
+  perspective: 1000px;
+  margin: 30px;
+  position: relative; /* establish containing block for absolute children */
+}
+
+.core-team-content {
+  position: relative; /* changed from fixed to relative for in-place flip */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transform-origin: center center; /* pivot remains centered, no lateral shift */
+  border-radius: 10px;
+}
+
+.core-team-card:hover .core-team-content {
+  transform: rotateY(180deg);
+}
+
+.core-team-front,
+.core-team-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffce00;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+}
+
+.core-team-back {
+  transform: rotateY(180deg);
+}
+
+.core-team-img1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  border: 3px solid white;
+}
+
+.core-team-title-text {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.core-team-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.core-team-description {
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .core-team-container h1 {
+    padding-top: 20px;
+    font-size: 2rem;
+  }
+
+  .core-team-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 5px;
+    margin: 0 -10px;
+    grid-template-columns: unset;
+    gap: 15px;
+  }
+  .core-team-row.core-team-first-row {
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, 300px);
+    max-width: 630px;
+  }
+
+  .core-team-row.core-team-first-row,
+  .core-team-row.core-team-multiple {
+    grid-template-columns: unset;
+    max-width: none;
+    display: flex;
+  }
+
+  .core-team-card {
+    flex: 0 0 220px;
+    margin-right: 40px;
+    scroll-snap-align: start;
+    min-height: 240px;
+  }
+
+  .core-team-img1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .core-team-title-text {
+    font-size: 1.2rem;
+  }
+
+  .core-team-subtitle {
+    font-size: 1rem;
+  }
+
+  .core-team-description {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}

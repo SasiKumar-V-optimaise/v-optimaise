@@ -1,0 +1,90 @@
+/* .employee-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.row.two {
+  flex-wrap: nowrap;
+}
+
+.row.four {
+  flex-wrap: nowrap;
+}
+
+.card {
+  width: 12rem;
+  height: 20rem;
+  cursor: pointer;
+  background-color: azure;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+  background-color: rgb(127, 204, 240);
+  padding: 5em;
+  transform-style: preserve-3d;
+  height: fit-content;
+
+
+  
+
+}
+
+.card:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  height: 130px;
+}
+
+.profile-image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transform: translateZ(4rem);
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.role {
+  transform: translateZ(3rem);
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: #009bff;
+}
+
+.description {
+  transform: translateZ(3rem);
+  font-size: 1rem;
+} */

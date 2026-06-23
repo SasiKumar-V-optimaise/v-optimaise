@@ -1,0 +1,202 @@
+.about-page {
+  color: #f7efe5;
+  background: #111111;
+}
+
+.about-page-inner {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.about-hero {
+  padding: 148px 0 76px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #111111, #4b2e1f);
+}
+
+.about-kicker {
+  margin: 0 0 12px;
+  color: #e3bd6d;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  max-width: 860px;
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
+}
+
+.about-hero p:last-child {
+  max-width: 760px;
+  margin: 22px 0 0;
+  color: #f1e8dc;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  line-height: 1.65;
+}
+
+.about-section {
+  padding: clamp(64px, 8vw, 104px) 0;
+  background: #111111;
+}
+
+.about-section:nth-of-type(odd) {
+  background: #1c130e;
+}
+
+.about-two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: start;
+}
+
+.about-section h2,
+.about-cta h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.12;
+}
+
+.about-section p {
+  margin: 0;
+  color: #d8c6b2;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.about-section-heading {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.about-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-card-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-card,
+.about-chip-card {
+  min-width: 0;
+  padding: 24px;
+  background: #24170f;
+  border: 1px solid rgba(227, 189, 109, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22);
+}
+
+.about-section:nth-of-type(even) .about-card,
+.about-section:nth-of-type(even) .about-chip-card {
+  background: #1c130e;
+}
+
+.about-card h3 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 1.22rem;
+}
+
+.about-card p {
+  color: #d8c6b2;
+}
+
+.about-card.compact {
+  border-left: 4px solid #e3bd6d;
+}
+
+.about-card.compact p {
+  color: #f1e8dc;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.level-section {
+  color: #ffffff;
+  background: #171717 !important;
+}
+
+.level-section p {
+  color: #f1e8dc;
+}
+
+.about-chip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-chip-card {
+  color: #f7efe5;
+  font-weight: 850;
+  text-align: center;
+}
+
+.choose-section {
+  background: #1c130e;
+}
+
+.about-cta {
+  padding: clamp(64px, 8vw, 96px) 0;
+  color: #ffffff;
+  background: #4b2e1f;
+  text-align: center;
+}
+
+.about-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 24px;
+  padding: 0 22px;
+  color: #111111;
+  background: #e3bd6d;
+  border: 1px solid #e3bd6d;
+  border-radius: 8px;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.about-cta-button:hover,
+.about-cta-button:focus-visible {
+  background: #8b5e34;
+  color: #ffffff;
+  outline: 2px solid rgba(227, 189, 109, 0.36);
+  outline-offset: 2px;
+}
+
+@media (max-width: 920px) {
+  .about-two-column,
+  .about-card-grid,
+  .about-card-grid.three,
+  .about-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .about-page-inner {
+    width: calc(100% - 32px);
+  }
+
+  .about-hero {
+    padding: 126px 0 58px;
+  }
+
+  .about-two-column,
+  .about-card-grid,
+  .about-card-grid.three,
+  .about-chip-grid {
+    grid-template-columns: 1fr;
+  }
+}

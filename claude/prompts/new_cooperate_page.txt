@@ -1,0 +1,55 @@
+Write full HTML/Markdown content for the CoOperate product page based on the structure and content below. Use our brand voice (www.v-optimai.com):
+
+Here is the raw content (insert here from this chat)...
+
+- Hero text
+<h1>CoOperate — Real-Time Intelligence for Safe, Efficient Manufacturing</h1>
+<p>A 24×7 industrial co-operator that watches your processes, detects anomalies, optimizes performance, and collaborates with your team — in real time.</p>
+<button>Request Demo</button>
+<button>Explore Technical Architecture</button>
+
+- Value Proposition
+<h2>Factory Intelligence. Always On. Always Actionable.</h2>
+<ul>
+  <li>24×7 process monitoring of real-time online parameters</li>
+  <li>Offline data ingestion from shared drives, Excel, CSV</li>
+  <li>Detects anomalies early using behavior modeling</li>
+  <li>Drives energy efficiency & yield improvement</li>
+  <li>Alerts via Email, Slack, WhatsApp</li>
+  <li>Supports human-controlled real-time actions</li>
+</ul>
+
+- Capabilities
+<h2>How CoOperate Understands Your Factory</h2>
+<p>CoOperate uses template-based “Skills & Context” files to encode machine/equipment knowledge, process logic, and operational behavior.</p>
+<ul>
+  <li>Markdown, PowerPoint, PDF manuals</li>
+  <li>Excel & CSV process histories</li>
+  <li>Shared drive hierarchical datasets</li>
+  <li>Historical behavior modeling</li>
+</ul>
+
+- Architecture
+<h2>From Data to Decisions: Intelligent, Context-Rich, and Safe</h2>
+<p>CoOperate ingests real & offline data, builds context-aware models, and runs continuous agentic analysis for actionable insights.</p>
+
+- Use Cases
+<h2>Use Cases</h2>
+<ul>
+  <li>Anomaly Detection & Early Warning</li>
+  <li>Energy Consumption Optimization</li>
+  <li>Yield & Output Consistency Assurance</li>
+  <li>Predictive Alerts & Operational Insights</li>
+  <li>Real-Time Recommendations with Human Verification</li>
+</ul>
+
+- Integrations
+<h2>Connect Where Your Teams Already Work</h2>
+<p>Email, Slack, MS Teams, WhatsApp, SMS, In-App Notifications</p>
+
+- CTA Footer
+<p>Let’s make your processes safer, more efficient, and more sustainable.</p>
+<button>Request a Demo</button>
+<button>Download White Paper</button>
+
+Please output clean, responsive HTML/Markdown suitable for our website.
